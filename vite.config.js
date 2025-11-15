@@ -8,7 +8,8 @@ export default defineConfig({
     port: 3000,
     proxy: {
       '/api': {
-        target: 'http://localhost:5000',
+        // target: 'http://localhost:5000',
+        target:'https://crm-backend-u7wi.onrender.com',
         changeOrigin: true,
       },
     },
